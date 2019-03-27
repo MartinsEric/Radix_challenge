@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 namespace PrimeiraQuestao
 {
     
-    class Program
+    public class Program
     {
         /* 
          * O método Main é responsável por definir quantos testes serão feitos, instanciar a classe FibonacciSequence (onde toda lógica do problema foi implementada) e tratar
