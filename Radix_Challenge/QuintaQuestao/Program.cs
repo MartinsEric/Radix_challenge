@@ -10,6 +10,11 @@ namespace QuintaQuestao
     {
         static void Main(string[] args)
         {
+            string s = "palavra";
+
+            Console.WriteLine(s.Substring(0, 5));
+
+            Console.ReadLine();
         }
     }
 }

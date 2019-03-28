@@ -31,14 +31,21 @@ namespace QuartaQuestao
 
                 verificador.PalavraOriginal = palavra;
 
-                while (!verificador.EhPalindromo(palavra))
+                while (true)
                 {
-                    if(palavra.Length == 2)
+                    if(verificador.IndiceInicial + 2 >= verificador.PalavraOriginal.Length - 1)
                     {
                         Console.WriteLine("Sem resultado!");
+                        break;
                     }
 
-
+                    if (verificador.EhPalindromo(palavra))
+                    {
+                        Console.WriteLine(palavra);
+                        break;
+                    }
+                    Console.WriteLine(palavra);
+                    palavra = verificador.CriaSubString(palavra);
                 }
             }
 

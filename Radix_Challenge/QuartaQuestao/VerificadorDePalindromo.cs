@@ -9,7 +9,7 @@ namespace QuartaQuestao
     public class VerificadorDePalindromo
     {
         public string PalavraOriginal { get; set; }
-        public int IndiceInicial { get; private set; }
+        public int IndiceInicial { get; set; }
 
         public VerificadorDePalindromo()
         {
@@ -30,10 +30,19 @@ namespace QuartaQuestao
             return false;
         }
 
-        private string CriaSubString(string palavra)
+        public string CriaSubString(string palavra)
         {
-            int novoFinal = palavra.Length;
-            novoFinal--;
+            int novoFinal = palavra.Length - 1;
+            if (palavra.Length == 3 && !EhPalindromo(palavra))
+            {
+                
+                novoFinal = PalavraOriginal.Length - 1;
+
+                palavra = PalavraOriginal.Substring(IndiceInicial + 1, novoFinal);
+                
+                return palavra;
+            }
+            return palavra.Substring(IndiceInicial, novoFinal);
         }
 
         private string RemoverAcentuacao(string palavra)
