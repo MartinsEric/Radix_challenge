@@ -21,34 +21,29 @@ namespace SegundaQuestao
                 Console.WriteLine("Digite um número entre 1 e 108 inclusive.");
                 numero = Int32.Parse(Console.ReadLine());
 
-                try
-                {
-                    if (EhPerfeito(numero)) 
-                    {
-                        Console.WriteLine($"\n{numero} eh perfeito!\n");
-                    }
-                    else
-                    {
-                        Console.WriteLine($"\n{numero} não eh perfeito!\n");
-                    }
-                }
-                catch (ArgumentOutOfRangeException)
+                if (numero < 1 || numero > 108)
                 {
                     Console.WriteLine("\nO número deve estar entre 1 e 108!\n");
+                    continue;
                 }
+
+                if (EhPerfeito(numero))
+                {
+                    Console.WriteLine($"\n{numero} eh perfeito!\n");
+                }
+                else
+                {
+                    Console.WriteLine($"\n{numero} não eh perfeito!\n");
+                }
+
             }
             Console.ReadLine();
         }
 
-        //Returna True se o número é perfeito ou False caso não seja. Pode lançar uma exceção se o número estiver fora do range estipulado (1 até 108).
+        //Returna True se o número for perfeito ou False caso não seja.
         public static bool EhPerfeito(int numero)
         {
             int soma = 0;
-
-            if(numero < 1 || numero > 108)
-            {
-                throw new ArgumentOutOfRangeException();
-            }
 
             for(int i = 1; i < numero; i++)
             {
