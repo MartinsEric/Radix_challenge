@@ -25,13 +25,21 @@ namespace QuartaQuestao
                 
                 if (!PalavraEhValida(palavra))
                 {
-                    Console.WriteLine("A palavra não pode conter número ou possuir mais que 100 caracteres.");
+                    Console.WriteLine("Entrada inválida!");
                     continue;
                 }
 
                 verificador.PalavraOriginal = palavra;
 
-                verificador.BuscarPalindromo(palavra);
+                while (!verificador.EhPalindromo(palavra))
+                {
+                    if(palavra.Length == 2)
+                    {
+                        Console.WriteLine("Sem resultado!");
+                    }
+
+
+                }
             }
 
             Console.ReadLine();
@@ -40,8 +48,6 @@ namespace QuartaQuestao
 
         public static bool PalavraEhValida(string palavra)
         {
-            palavra = palavra.ToLower(); //Deixa a palavra toda com letras minúsculas.
-
             //Verifica se a palavra tem até 100 caracteres.
             if (palavra.Where(c => char.IsNumber(c)).Count() == 0 && palavra.Count() <= 100)
             {
