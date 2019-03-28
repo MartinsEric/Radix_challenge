@@ -25,26 +25,26 @@ namespace QuartaQuestao
                 
                 if (!PalavraEhValida(palavra))
                 {
-                    Console.WriteLine("Entrada inválida!");
+                    Console.WriteLine("\nEntrada inválida!\n");
                     continue;
                 }
 
                 verificador.PalavraOriginal = palavra;
 
+                //looping infinito até que um dos breaks sejam assionados.
                 while (true)
                 {
-                    if(verificador.IndiceInicial + 2 >= verificador.PalavraOriginal.Length - 1)
+                    if (verificador.EhPalindromo(palavra))
                     {
-                        Console.WriteLine("Sem resultado!");
+                        Console.WriteLine("\n" + palavra + "\n");
                         break;
                     }
 
-                    if (verificador.EhPalindromo(palavra))
+                    if(verificador.IndiceInicial + 2 >= verificador.PalavraOriginal.Length - 1)
                     {
-                        Console.WriteLine(palavra);
+                        Console.WriteLine("\nSem resultado!\n");
                         break;
                     }
-                    Console.WriteLine(palavra);
                     palavra = verificador.CriaSubString(palavra);
                 }
             }
@@ -55,12 +55,10 @@ namespace QuartaQuestao
 
         public static bool PalavraEhValida(string palavra)
         {
-            //Verifica se a palavra tem até 100 caracteres.
-            if (palavra.Where(c => char.IsNumber(c)).Count() == 0 && palavra.Count() <= 100)
-            {
-                return true;
-            }
-            return false;
+            //Verifica se a palavra não contém números e se possui até 100 caracteres.
+            return palavra.Where(c => char.IsNumber(c)).Count() == 0 && palavra.Count() <= 100;
+            
+            
         }
     }
 }
