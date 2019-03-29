@@ -8,7 +8,7 @@ using TerceiraQuestao;
 namespace TerceiraQuestao.Migrations
 {
     [DbContext(typeof(RadixContext))]
-    [Migration("20190329132112_Inicial")]
+    [Migration("20190329151048_Inicial")]
     partial class Inicial
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)

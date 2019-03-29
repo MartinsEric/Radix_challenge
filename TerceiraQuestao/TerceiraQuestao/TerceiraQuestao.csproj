@@ -171,9 +171,9 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Cliente.cs" />
-    <Compile Include="Migrations\20190329132112_Inicial.cs" />
-    <Compile Include="Migrations\20190329132112_Inicial.designer.cs">
-      <DependentUpon>20190329132112_Inicial.cs</DependentUpon>
+    <Compile Include="Migrations\20190329151048_Inicial.cs" />
+    <Compile Include="Migrations\20190329151048_Inicial.designer.cs">
+      <DependentUpon>20190329151048_Inicial.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\RadixContextModelSnapshot.cs" />
     <Compile Include="Pessoa.cs" />
