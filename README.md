@@ -14,8 +14,8 @@ Ao abrir o projeto da questão 3 no Visual Studio, siga os seguintes passos:
 
 **6.** Agora execute o comando: `Install-Package Microsoft.EntityFrameworkCore.tools -Version 1.1` (Irá baixar as ferramentas de migration)
 
-**7.** Execute outro comando: `Add-Migration Inicial`
+**7.** Após o Visual Studio reconhecer os pacotes do Entity Framework, execute outro comando: `Add-Migration Inicial`
 
-**8.** Execute o camando: `Update-Database para criar as tabelas no banco de dados`.
+**8.** Execute o camando: `Update-Database` para criar as tabelas no banco de dados.
 
 **9.** O projeto ja pode ser executado.
