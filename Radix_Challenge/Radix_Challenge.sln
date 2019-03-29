@@ -7,8 +7,6 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PrimeiraQuestao", "Primeira
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SegundaQuestao", "SegundaQuestao\SegundaQuestao.csproj", "{B91E8F7E-F61E-47DB-8AB5-92CE3DE60900}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TerceiraQuestao", "TerceiraQuestao\TerceiraQuestao.csproj", "{2731AB5A-14D2-4B2A-A049-49541547E5B0}"
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "QuartaQuestao", "QuartaQuestao\QuartaQuestao.csproj", "{0749D913-F21B-4FF0-A7AC-D1018FF6334C}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "QuintaQuestao", "QuintaQuestao\QuintaQuestao.csproj", "{55594A62-B43B-4E24-8872-0959968B19A7}"
@@ -29,10 +27,6 @@ Global
 		{B91E8F7E-F61E-47DB-8AB5-92CE3DE60900}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B91E8F7E-F61E-47DB-8AB5-92CE3DE60900}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B91E8F7E-F61E-47DB-8AB5-92CE3DE60900}.Release|Any CPU.Build.0 = Release|Any CPU
-		{2731AB5A-14D2-4B2A-A049-49541547E5B0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{2731AB5A-14D2-4B2A-A049-49541547E5B0}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{2731AB5A-14D2-4B2A-A049-49541547E5B0}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{2731AB5A-14D2-4B2A-A049-49541547E5B0}.Release|Any CPU.Build.0 = Release|Any CPU
 		{0749D913-F21B-4FF0-A7AC-D1018FF6334C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{0749D913-F21B-4FF0-A7AC-D1018FF6334C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{0749D913-F21B-4FF0-A7AC-D1018FF6334C}.Release|Any CPU.ActiveCfg = Release|Any CPU

@@ -1,0 +1,32 @@
+CREATE TABLE Cliente (
+    Id INT IDENTITY(1,1) NOT NULL,
+    Name VARCHAR(255),
+    Street VARCHAR(255),
+    City VARCHAR (255),
+    State CHAR (2),
+    Credit_limit FLOAT (53),
+    CONSTRAINT PK_Clientes PRIMARY KEY ([Id])
+);
+
+CREATE TABLE Pessoa (
+    Id_customers INT NOT NULL,
+    Cpf CHAR(14) NOT NULL,
+    CONSTRAINT FK_ClientesId FOREIGN KEY (Id_customers) 
+    REFERENCES Cliente (Id)
+);
+
+INSERT INTO Cliente
+VALUES ('Eric Martins', 'Rua Otton da Fonseca, 80', 'Rio de Janeiro', 'RJ', 3000.00),
+       ('Luiza Maíra', 'Rua Voluntários da Pátria, 2525', 'Araraquara', 'SP', 4000.00),
+       ('Fabrício de Souza', 'Rua Otton da Fonseca, 40', 'Rio de Janeiro', 'RJ', 6000.00),
+       ('Breno Barros', 'Rua Otton da Fonseca, 80', 'Rio de Janeiro', 'RJ', 2500.00),
+       ('Thamara Santos', 'Rua Ibituruna, 65', 'Rio de Janeiro', 'RJ', 1200.00),
+       ('Joyce Meirelles', 'Rua Oliveira Martins, 275', 'Rio de Janeiro', 'RJ', 3200.00);
+
+INSERT INTO Pessoa (Id_customers, Cpf)
+VALUES (1, '14678591761'),
+       (2, '165.324.657-23'),
+       (3, '12345678998'),
+       (4, '54378563265'),
+       (5, '645.867.463-43'),
+       (6, '43565487691');
